@@ -21,23 +21,23 @@ public class OI {
 	
 	Joystick joy1 = new Joystick(1);
 	
-	Button button1 = new JoystickButton(joy1,1);
-	Button button2 = new JoystickButton(joy1,2);
-	Button button3 = new JoystickButton(joy1,3);
-	Button button4 = new JoystickButton(joy1,4);
-	Button button5 = new JoystickButton(joy1,5);
-	Button button6 = new JoystickButton(joy1,6);
-	Button button7 = new JoystickButton(joy1,7);
+	Button Joystick1_Button1 = new JoystickButton(joy1,1);
+	Button Joystick1_Button2 = new JoystickButton(joy1,2);
+	Button Joystick1_Button3 = new JoystickButton(joy1,3);
+	Button Joystick1_Button4 = new JoystickButton(joy1,4);
+	Button Joystick1_Button5 = new JoystickButton(joy1,5);
+	Button Joystick1_Button6 = new JoystickButton(joy1,6);
+	Button Joystick1_Button7 = new JoystickButton(joy1,7);
 	
 	public OI(){
 		
-		button1.whenActive(new compressorStart());
-		button2.whenActive(new compressorStop());
-		button3.whenPressed(new leftArmOpen());
-		button4.whenPressed(new leftArmClose());
-		button5.whenPressed(new rightArmOpen());
-		button6.whenPressed(new rightArmClose());
-		button7.whenPressed(new bothArmsNeutral());
+		Joystick1_Button1.whenActive(new compressorStart());
+		Joystick1_Button2.whenActive(new compressorStop());
+		Joystick1_Button3.whenPressed(new leftArmOpen());
+		Joystick1_Button4.whenPressed(new leftArmClose());
+		Joystick1_Button5.whenPressed(new rightArmOpen());
+		Joystick1_Button6.whenPressed(new rightArmClose());
+		Joystick1_Button7.whenPressed(new bothArmsNeutral());
 	}
 	
 }
