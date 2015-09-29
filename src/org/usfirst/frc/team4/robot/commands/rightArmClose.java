@@ -15,11 +15,11 @@ public class rightArmClose extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	Robot.pneumatics.rightArmClose();
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.pneumatics.rightArmClose();
     }
 
     // Make this return true when this Command no longer needs to run execute()
